@@ -1,0 +1,150 @@
+ *{
+     margin: 5px;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body{
+    background-color: hsl(210, 36%, 96%);
+
+ }
+  
+ #navMenu > span{
+    display: block;
+    cursor: pointer;
+    top: 50px;
+    left: 95%;
+    position: relative;
+    width: 33px;
+    height: 6px;
+    border-radius: 99000px;
+    background-color: #49a6e9;
+     
+}
+.animate__animated.animate__heartBeat{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+     
+}
+ 
+    
+#navMenu > span:not(last-child) {
+    margin-bottom: 5px;
+}
+/* #navMenu > span{
+    transition: all .8s ease-in-out;
+} */
+ 
+.container{
+    /* animation: bounceInLeft; */
+    animation-duration: 2s;
+    position: absolute;
+    width: 420px;
+    height: 100vh;
+    padding: 15px;
+    padding-top: 15px ;
+    visibility: hidden;
+    margin: -40px 0 0 -20px;
+    /* transition: color 0.3s ease; */
+    background-color: white;
+}
+.image-icon {
+    padding-right: 100px;
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.animate__rotateIn{
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite; */
+
+}
+#del:hover{
+    color: rgb(169, 100, 100);
+}
+#del{
+    cursor: pointer;
+
+   font-size: 50px;
+   color: red;
+   font-weight: 900;
+
+    text-decoration: none;
+}
+.navigation, .logo {
+    background-color: white;
+
+}
+.navigation a{
+    text-decoration: none;
+    color: hsl(210, 22%, 49%);
+    font-size: 25px;
+     
+}
+.navigation li:hover{ 
+    z-index: 80;
+    padding: 10px;
+    color:hsl(205, 63%, 48%);
+    transition: all 0.3s linear;
+    transform: scale(1.1);
+    background-color: hsl(205, 86%, 81%); 
+}
+.navigation li{
+    padding: 8px 0;
+    list-style: none;
+
+}
+li{
+    list-style: none;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+    background: transparent;
+}
+.logo img :hover{
+     
+}
+.logo img{
+    width: 30px;
+}
+.active > span {
+    /* transform: rotate(45deg); */
+
+    /* transition-delay: 0.8s; */
+    /* background-color: #49a6e9;; */
+    opacity: 1;
+  transform: rotate(45deg)  ;
+  background: blueviolet;
+
+}
+.active > span:nth-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    background-color: red;;
+
+}    
+ 
+.active > span:nth-child(3){
+    /* transition-delay: .4s; */
+    background-color: green;
+    /* opacity: 0; */
+    transform: rotate(0deg) scale(0.2, 0.2);
+
+
+
+}
+#navMenu.active > span:nth-child(1) {
+    /* transform: translateY(10px);
+    background-color: lime; */
+    /* transform: rotate(45deg); */
+    /* transform: rotate(45deg); */
+
+    /* transition-delay: .4s; */
+
+}
+ 
